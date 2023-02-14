@@ -1,0 +1,42 @@
+<form (ngSubmit)="createNewCat()">
+  <div>
+    <label for="cat-name">Nom du chat</label>
+    <input
+      id="name"
+      name="cat-name"
+      type="text"
+      [(ngModel)]="newCat.name"
+      required
+    />
+  </div>
+  <div>
+    <label for="cat-race">Race du chat</label>
+    <input
+      id="cat-race"
+      name="cat-race"
+      type="text"
+      [(ngModel)]="newCat.race"
+      required
+    />
+  </div>
+  <div>
+    <label for="cat-birth">Date de naissance du chat</label>
+    <input
+      id="cat-birth"
+      name="cat-birth"
+      type="date"
+      [(ngModel)]="newCat.birth"
+      required
+    />
+  </div>
+  <div>
+    <label for="cat-img">Image du chat</label>
+    <input
+      id="cat-img"
+      name="cat-img"
+      type="image"
+      [(ngModel)]="newCat.imgCat"
+    />
+  </div>
+  <input type="submit" value="Ajouter le chat" />
+</form>
